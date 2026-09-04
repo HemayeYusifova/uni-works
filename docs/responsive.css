@@ -1,0 +1,826 @@
+/* =========================================================
+   RESPONSIVE.CSS
+   TABLET + MOBILE
+========================================================= */
+
+/* =========================================================
+   1. ÜMUMİ TƏHLÜKƏSİZLİK
+========================================================= */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   2. TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .container {
+    width: min(100% - 40px, 1180px);
+  }
+
+  /* HERO */
+
+  .hero-grid {
+    gap: 45px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(42px, 5vw, 62px);
+  }
+
+  /* SERVICES */
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* ABOUT */
+
+  .about-grid {
+    gap: 45px;
+  }
+
+  /* WHY */
+
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* PROCESS */
+
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* PRICING */
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* PORTFOLIO */
+
+  .portfolio-section .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================================
+   3. NAVBAR / TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .nav-container {
+    min-height: 72px;
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    color: #111827;
+    background: #ffffff;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .navbar {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 14px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.98);
+
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s ease,
+      transform 0.25s ease;
+
+    z-index: 1000;
+  }
+
+  .navbar.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 10px;
+
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    color: #5b5bf7;
+    background: #f3f4ff;
+  }
+
+  .nav-order-btn {
+    margin-top: 7px;
+    justify-content: center;
+    color: #ffffff !important;
+    background: #5b5bf7 !important;
+  }
+
+  /* HERO */
+
+  .hero {
+    padding-top: 125px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    max-width: 720px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 720px;
+    margin: 10px auto 0;
+  }
+
+  /* ABOUT */
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 45px !important;
+  }
+
+  .contact-content {
+    max-width: 680px;
+  }
+
+  .contact-form-card {
+    width: 100%;
+    max-width: 720px;
+  }
+}
+
+/* =========================================================
+   4. MOBİL — 768px
+========================================================= */
+
+@media (max-width: 768px) {
+  /* CONTAINER */
+
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  /* SECTIONS */
+
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .section-header {
+    margin-bottom: 38px;
+  }
+
+  .section-header h2 {
+    font-size: 31px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  .section-header p {
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* =====================================================
+       HEADER
+    ===================================================== */
+
+  .header {
+    padding: 0;
+  }
+
+  .nav-container {
+    min-height: 68px;
+  }
+
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  /* =====================================================
+       HERO
+    ===================================================== */
+
+  .hero {
+    min-height: auto;
+    padding-top: 110px;
+    padding-bottom: 75px;
+  }
+
+  .hero-grid {
+    gap: 42px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content h1 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 42px;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-content > p,
+  .hero-description {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-benefits {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* HERO DASHBOARD */
+
+  .dashboard-card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* =====================================================
+       TRUST
+    ===================================================== */
+
+  .trust-grid,
+  .trust-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* =====================================================
+       SERVICES
+    ===================================================== */
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  /* =====================================================
+       ABOUT
+    ===================================================== */
+
+  .about-grid {
+    gap: 35px;
+  }
+
+  .about-content h2 {
+    font-size: 31px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* =====================================================
+       WHY
+    ===================================================== */
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* =====================================================
+       PROCESS
+    ===================================================== */
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* =====================================================
+       PORTFOLIO
+    ===================================================== */
+
+  .portfolio-section {
+    padding: 75px 0 !important;
+  }
+
+  .portfolio-section .portfolio-grid {
+    grid-template-columns: 1fr !important;
+
+    max-width: 580px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio-section .portfolio-preview {
+    height: 280px;
+  }
+
+  /* Mobil cihazda hover olmadığı üçün düyməni
+       görünən saxlayırıq */
+
+  .portfolio-section .portfolio-overlay {
+    align-items: flex-end;
+
+    padding-bottom: 18px;
+
+    opacity: 1;
+    visibility: visible;
+
+    background: linear-gradient(
+      to top,
+      rgba(15, 23, 42, 0.62),
+      transparent 55%
+    );
+  }
+
+  .portfolio-section .portfolio-view-btn {
+    min-height: 42px;
+
+    padding: 0 16px;
+
+    transform: none;
+
+    font-size: 12px;
+  }
+
+  /* =====================================================
+       PRICING
+    ===================================================== */
+
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+
+    max-width: 580px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-card {
+    min-height: auto;
+  }
+
+  .pricing-card.featured {
+    order: initial;
+  }
+
+  .pricing-value strong {
+    font-size: 25px;
+  }
+
+  .pricing-description {
+    font-size: 14px;
+  }
+
+  .pricing-features li {
+    font-size: 14px;
+  }
+
+  .pricing-button {
+    min-height: 52px;
+    font-size: 14px;
+  }
+
+  .pricing-label {
+    font-size: 11px;
+  }
+
+  .pricing-popular {
+    font-size: 10px;
+  }
+
+  .pricing-note p {
+    font-size: 12px;
+  }
+
+  /* =====================================================
+       FAQ
+    ===================================================== */
+
+  .faq-section {
+    padding: 75px 0 !important;
+  }
+
+  .faq-list {
+    max-width: 600px;
+  }
+
+  .faq-question {
+    min-height: 68px !important;
+
+    padding: 17px 18px !important;
+
+    font-size: 14px !important;
+  }
+
+  .faq-answer p {
+    padding: 0 60px 20px 18px !important;
+
+    font-size: 13px !important;
+  }
+
+  /* =====================================================
+       CONTACT
+    ===================================================== */
+
+  .contact-section {
+    padding: 75px 0 !important;
+  }
+
+  .contact-content {
+    text-align: center;
+  }
+
+  .contact-content .section-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-content h2 {
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 38px !important;
+  }
+
+  .contact-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-benefits {
+    max-width: 480px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: left;
+  }
+
+  .contact-form-card {
+    padding: 28px 24px !important;
+  }
+
+  .form-row,
+  .contact-section .form-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* =====================================================
+       FOOTER
+    ===================================================== */
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+}
+
+/* =========================================================
+   5. MOBİL — 560px
+========================================================= */
+
+@media (max-width: 560px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  /* HERO */
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    letter-spacing: -1.2px;
+  }
+
+  .hero-content > p,
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* TRUST */
+
+  .trust-grid,
+  .trust-items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* PORTFOLIO */
+
+  .portfolio-section .portfolio-preview {
+    height: 260px;
+  }
+
+  .portfolio-section .portfolio-content {
+    padding: 22px !important;
+  }
+
+  .portfolio-section .portfolio-content h3 {
+    font-size: 19px !important;
+  }
+
+  .portfolio-section .portfolio-content p {
+    font-size: 13px !important;
+  }
+
+  /* PRICING */
+
+  .pricing-card {
+    padding: 27px 23px !important;
+    border-radius: 22px;
+  }
+
+  /* FAQ */
+
+  .faq-question {
+    gap: 12px !important;
+  }
+
+  /* CONTACT */
+
+  .contact-content h2 {
+    font-size: 34px !important;
+  }
+
+  .contact-form-head h3 {
+    font-size: 23px !important;
+  }
+
+  /* FOOTER */
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   6. KİÇİK TELEFON — 420px
+========================================================= */
+
+@media (max-width: 420px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  /* HEADER */
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .menu-btn {
+    width: 41px;
+    height: 41px;
+  }
+
+  .navbar {
+    left: 12px;
+    right: 12px;
+  }
+
+  /* HERO */
+
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .hero-badge {
+    font-size: 11px;
+  }
+
+  .hero-benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  /* SECTION TITLES */
+
+  .section-header h2,
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  /* DASHBOARD */
+
+  .dashboard-card {
+    border-radius: 20px;
+  }
+
+  /* TRUST */
+
+  .trust-grid,
+  .trust-items {
+    gap: 12px;
+  }
+
+  /* PORTFOLIO */
+
+  .portfolio-section .portfolio-preview {
+    height: 245px;
+  }
+
+  .portfolio-section .word-demo-page {
+    width: 88%;
+  }
+
+  .portfolio-section .excel-demo-sheet {
+    width: 91%;
+  }
+
+  .portfolio-section .education-demo-preview {
+    width: 91%;
+  }
+
+  .portfolio-section .design-demo-preview {
+    width: 84%;
+  }
+
+  /* PRICING */
+
+  .pricing-card {
+    padding: 25px 20px !important;
+  }
+
+  .pricing-card h3 {
+    font-size: 21px;
+  }
+
+  .pricing-value {
+    padding: 16px !important;
+  }
+
+  /* FAQ */
+
+  .faq-question {
+    font-size: 13px !important;
+  }
+
+  .faq-question i {
+    flex: 0 0 31px !important;
+
+    width: 31px !important;
+    height: 31px !important;
+  }
+
+  .faq-answer p {
+    padding: 0 17px 18px !important;
+  }
+
+  /* CONTACT */
+
+  .contact-content h2 {
+    font-size: 30px !important;
+  }
+
+  .contact-benefit {
+    font-size: 12px;
+  }
+
+  .contact-form-card {
+    padding: 24px 18px !important;
+    border-radius: 20px !important;
+  }
+
+  .contact-section .form-group input,
+  .contact-section .form-group select {
+    height: 54px !important;
+
+    font-size: 13px !important;
+  }
+
+  .contact-section .form-group textarea {
+    min-height: 135px !important;
+
+    font-size: 13px !important;
+  }
+
+  .order-submit-btn {
+    min-height: 54px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  /* FLOATING WHATSAPP */
+
+  .floating-whatsapp,
+  .whatsapp-float {
+    right: 15px !important;
+    bottom: 15px !important;
+  }
+
+  /* BACK TO TOP */
+
+  .back-to-top {
+    right: 15px !important;
+  }
+}

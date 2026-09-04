@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PDF və Mətn Xidmətləri | Uni Works</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <meta
+      name="description"
+      content="PDF-dən Word-ə çevirmə, şəkildən mətnə köçürmə, PDF birləşdirmə, bölmə, formatlama və sənədlərin çap üçün hazırlanması."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pdf.css" />
+    <link rel="stylesheet" href="brand.css" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="logo.png" alt="UNI WORKS" class="site-logo" />
+          <div class="brand-text">
+            <strong>UNI WORKS</strong>
+            <span>Rəqəmsal və Təhsil Xidmətləri</span>
+          </div>
+        </a>
+
+        <nav class="navbar" id="navbar">
+          <a href="index.html" class="nav-link">Ana səhifə</a>
+          <a href="index.html#services" class="nav-link">Xidmətlər</a>
+          <a href="index.html#about" class="nav-link">Haqqımızda</a>
+          <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+          <a href="index.html#pricing" class="nav-link">Qiymətlər</a>
+          <a href="index.html#faq" class="nav-link">FAQ</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-order-btn">
+          Sifariş ver
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Menyunu aç">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+
+      <section class="pdf-page-hero">
+        <div class="container pdf-hero-grid">
+          <div class="pdf-hero-content">
+            <div class="section-badge pdf-badge">
+              <i class="fa-solid fa-file-pdf"></i>
+              PDF və mətn xidməti
+            </div>
+
+            <h1>
+              Sənədlərinizi
+              <span>istədiyiniz formata çevirin.</span>
+            </h1>
+
+            <p>
+              PDF, Word, şəkil və mətn fayllarının çevrilməsi, redaktə edilə
+              bilən formaya salınması, birləşdirilməsi, bölünməsi və təqdimata
+              hazırlanması.
+            </p>
+
+            <div class="pdf-hero-buttons">
+              <a href="index.html#contact" class="btn btn-primary pdf-main-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                Sifariş ver
+              </a>
+
+              <a href="#pdf-services" class="btn btn-secondary">
+                Xidmətlərə bax
+              </a>
+            </div>
+
+            <div class="pdf-hero-features">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Redaktə edilə bilən fayl
+              </div>
+
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Səliqəli format
+              </div>
+
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Çap üçün hazırlıq
+              </div>
+            </div>
+          </div>
+
+          <!-- FILE CONVERTER PREVIEW -->
+
+          <div class="pdf-converter-card">
+            <div class="pdf-converter-head">
+              <div>
+                <div class="pdf-converter-icon">
+                  <i class="fa-solid fa-file-pdf"></i>
+                </div>
+
+                <div>
+                  <span>Fayl çevirmə</span>
+                  <h3>Sənəd.pdf</h3>
+                </div>
+              </div>
+
+              <span class="pdf-ready">
+                <i class="fa-solid fa-check"></i>
+                Hazır
+              </span>
+            </div>
+
+            <div class="pdf-file-info">
+              <div>
+                <small>Fayl</small>
+                <strong>PDF</strong>
+              </div>
+
+              <div>
+                <small>Səhifə</small>
+                <strong>24</strong>
+              </div>
+
+              <div>
+                <small>Çıxış</small>
+                <strong>DOCX</strong>
+              </div>
+            </div>
+
+            <div class="pdf-conversion-box">
+              <div class="pdf-format-box pdf-source-format">
+                <div>
+                  <i class="fa-solid fa-file-pdf"></i>
+                </div>
+
+                <span>PDF</span>
+                <small>Original fayl</small>
+              </div>
+
+              <div class="pdf-conversion-arrow">
+                <span></span>
+
+                <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <span></span>
+              </div>
+
+              <div class="pdf-format-box pdf-output-format">
+                <div>
+                  <i class="fa-solid fa-file-word"></i>
+                </div>
+
+                <span>WORD</span>
+                <small>Redaktə edilə bilən</small>
+              </div>
+            </div>
+
+            <div class="pdf-progress">
+              <div class="pdf-progress-top">
+                <span>Formatlama</span>
+                <strong>100%</strong>
+              </div>
+
+              <div class="pdf-progress-line">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="pdf-converter-footer">
+              <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                Fayl yoxlanılıb
+              </div>
+
+              <a href="index.html#contact">
+                Sifariş et
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+
+      <section class="section pdf-services-section" id="pdf-services">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge pdf-badge">Fayl xidmətləri</div>
+
+            <h2>
+              PDF və mətn üzrə
+              <span>nələr edə bilərik?</span>
+            </h2>
+
+            <p>
+              Müxtəlif formatlarda olan sənədlərin işlənməsi, çevrilməsi və
+              istifadəyə hazır formaya salınması.
+            </p>
+          </div>
+
+          <div class="pdf-services-grid">
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-file-word"></i>
+              </div>
+
+              <span>01</span>
+
+              <h3>PDF → Word</h3>
+
+              <p>
+                PDF sənədinin redaktə edilə bilən Word formatına keçirilməsi və
+                tənzimlənməsi.
+              </p>
+            </article>
+
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-image"></i>
+              </div>
+
+              <span>02</span>
+
+              <h3>Şəkildən mətnə</h3>
+
+              <p>
+                Şəkil və skan edilmiş səhifələrdəki məlumatların mətn formasına
+                salınması.
+              </p>
+            </article>
+
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-object-group"></i>
+              </div>
+
+              <span>03</span>
+
+              <h3>PDF birləşdirmə</h3>
+
+              <p>
+                Bir neçə PDF və sənədin düzgün ardıcıllıqla vahid faylda
+                birləşdirilməsi.
+              </p>
+            </article>
+
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+
+              <span>04</span>
+
+              <h3>PDF bölmə</h3>
+
+              <p>
+                Böyük PDF faylından lazım olan səhifələrin ayrılması və ayrıca
+                saxlanması.
+              </p>
+            </article>
+
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-keyboard"></i>
+              </div>
+
+              <span>05</span>
+
+              <h3>Mətn yığımı</h3>
+
+              <p>
+                Əlyazma, şəkil və digər materialların elektron mətn formasında
+                hazırlanması.
+              </p>
+            </article>
+
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+
+              <span>06</span>
+
+              <h3>Formatlama</h3>
+
+              <p>
+                Mətnin şrift, interval, abzas, başlıq və səhifə quruluşunun
+                tənzimlənməsi.
+              </p>
+            </article>
+
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-print"></i>
+              </div>
+
+              <span>07</span>
+
+              <h3>Çapa hazırlıq</h3>
+
+              <p>
+                Sənədin səhifə ölçüsü, kənarları və digər parametrlərinin çap
+                üçün hazırlanması.
+              </p>
+            </article>
+
+            <article class="pdf-service-card">
+              <div class="pdf-card-icon">
+                <i class="fa-solid fa-file-export"></i>
+              </div>
+
+              <span>08</span>
+
+              <h3>Format çevirmə</h3>
+
+              <p>
+                Uyğun sənədlərin PDF, Word və digər istifadə edilə bilən
+                formatlara çevrilməsi.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMAT SECTION -->
+
+      <section class="section pdf-formats-section">
+        <div class="container pdf-formats-grid">
+          <div class="pdf-format-preview">
+            <div class="pdf-preview-header">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <small>Fayllar</small>
+            </div>
+
+            <div class="pdf-preview-files">
+              <div class="pdf-preview-file">
+                <div class="pdf-preview-file-icon pdf-red">
+                  <i class="fa-solid fa-file-pdf"></i>
+                </div>
+
+                <div>
+                  <strong>Sənəd.pdf</strong>
+                  <span>PDF sənədi</span>
+                </div>
+
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="pdf-preview-file">
+                <div class="pdf-preview-file-icon pdf-blue">
+                  <i class="fa-solid fa-file-word"></i>
+                </div>
+
+                <div>
+                  <strong>Sənəd.docx</strong>
+                  <span>Word sənədi</span>
+                </div>
+
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="pdf-preview-file">
+                <div class="pdf-preview-file-icon pdf-image">
+                  <i class="fa-solid fa-image"></i>
+                </div>
+
+                <div>
+                  <strong>Scan.jpg</strong>
+                  <span>Şəkil faylı</span>
+                </div>
+
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+
+            <div class="pdf-preview-bottom">
+              <span>
+                <i class="fa-solid fa-circle-check"></i>
+                Fayllar hazırdır
+              </span>
+
+              <strong>3 fayl</strong>
+            </div>
+          </div>
+
+          <div class="pdf-formats-content">
+            <div class="section-badge pdf-badge">Çevik formatlar</div>
+
+            <h2>
+              Müxtəlif faylları
+              <span>bir iş prosesində idarə edin.</span>
+            </h2>
+
+            <p>
+              Faylın formatından asılı olaraq uyğun işləmə üsulu seçilir. Məqsəd
+              məlumatı qoruyaraq sənədi daha rahat istifadə və redaktə edilən
+              formaya gətirməkdir.
+            </p>
+
+            <div class="pdf-format-features">
+              <div>
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                  <strong>PDF sənədləri</strong>
+                  <small> Çevirmə, birləşdirmə, bölmə və formatlama. </small>
+                </span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                  <strong>Word sənədləri</strong>
+                  <small> Mətn və səhifə quruluşunun tənzimlənməsi. </small>
+                </span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                  <strong>Şəkil və skanlar</strong>
+                  <small>
+                    Məlumatın elektron mətnə çevrilməsi və düzənlənməsi.
+                  </small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- USE CASES -->
+
+      <section class="section pdf-use-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge pdf-badge">İstifadə sahələri</div>
+
+            <h2>
+              Kimlər üçün
+              <span>uyğundur?</span>
+            </h2>
+          </div>
+
+          <div class="pdf-use-grid">
+            <article class="pdf-use-card">
+              <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+
+              <h3>Tələbələr</h3>
+
+              <p>
+                Kurs işi, hesabat və digər sənədlərin çevrilməsi və
+                formatlanması.
+              </p>
+            </article>
+
+            <article class="pdf-use-card">
+              <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+
+              <h3>Müəllimlər</h3>
+
+              <p>
+                Tədris materialları, skanlar və digər sənədlərin
+                elektronlaşdırılması.
+              </p>
+            </article>
+
+            <article class="pdf-use-card">
+              <div>
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+
+              <h3>İş fəaliyyəti</h3>
+
+              <p>
+                Hesabat, ərizə və iş sənədlərinin müxtəlif formatlarda
+                hazırlanması.
+              </p>
+            </article>
+
+            <article class="pdf-use-card">
+              <div>
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+              <h3>Şəxsi istifadə</h3>
+
+              <p>
+                Gündəlik sənəd və faylların çevrilməsi, yığılması və səliqəyə
+                salınması.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+
+      <section class="section pdf-process-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge pdf-badge">İş prosesi</div>
+
+            <h2>
+              Sifariş necə
+              <span>yerinə yetirilir?</span>
+            </h2>
+          </div>
+
+          <div class="pdf-process-grid">
+            <article class="pdf-process-card">
+              <div class="pdf-process-number">01</div>
+
+              <h3>Faylı göndərin</h3>
+
+              <p>PDF, Word, şəkil və ya işlənməli digər sənədi təqdim edin.</p>
+            </article>
+
+            <article class="pdf-process-card">
+              <div class="pdf-process-number">02</div>
+
+              <h3>Tapşırığı qeyd edin</h3>
+
+              <p>
+                Hansı formata çevrilməli və sənəddə hansı dəyişikliklərin
+                edilməli olduğunu bildirin.
+              </p>
+            </article>
+
+            <article class="pdf-process-card">
+              <div class="pdf-process-number">03</div>
+
+              <h3>Sənəd işlənir</h3>
+
+              <p>
+                Fayl çevrilir, mətn və format tələbə uyğun şəkildə tənzimlənir.
+              </p>
+            </article>
+
+            <article class="pdf-process-card">
+              <div class="pdf-process-number">04</div>
+
+              <h3>Hazır faylı alın</h3>
+
+              <p>
+                Son yoxlamadan sonra hazır sənəd tələb olunan formatda təqdim
+                edilir.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+
+      <section class="pdf-cta-section">
+        <div class="container">
+          <div class="pdf-cta-box">
+            <div>
+              <span> Çevrilməli sənədiniz var? </span>
+
+              <h2>
+                Faylınızı göndərin, lazım olan formatı birlikdə müəyyən edək.
+              </h2>
+
+              <p>
+                PDF, Word, şəkil və mətn faylları üzrə ehtiyacınızı qeyd edərək
+                sifariş göndərin.
+              </p>
+            </div>
+
+            <a href="index.html#contact" class="pdf-cta-button">
+              <i class="fa-brands fa-whatsapp"></i>
+
+              <span>
+                <small>Sifariş üçün</small>
+                <strong>WhatsApp-a keç</strong>
+              </span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div class="logo-text">
+              <strong>Uni works</strong>
+              <span>Peşəkar rəqəmsal dəstək</span>
+            </div>
+          </a>
+
+          <p>
+            Word, Excel, PowerPoint, təhsil, akademik sənədlər və PDF xidmətləri
+            üzrə rəqəmsal dəstək.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Xidmətlər</h4>
+
+          <a href="word.html">Word</a>
+          <a href="excel.html">Excel</a>
+          <a href="slayd.html">PowerPoint</a>
+          <a href="tehsil.html">Təhsil sənədləri</a>
+          <a href="dissertasiya.html">Akademik sənədlər</a>
+          <a href="pdf.html">PDF və mətn</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Keçidlər</h4>
+
+          <a href="index.html">Ana səhifə</a>
+          <a href="index.html#services">Xidmətlər</a>
+          <a href="index.html#about">Haqqımızda</a>
+          <a href="index.html#portfolio">Portfolio</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Əlaqə</h4>
+          <a href="index.html#contact">
+            <i class="fa-brands fa-name"></i>
+            Həmayə Yusifova
+          </a>
+          <a href="index.html#contact">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+
+          <a href="index.html#contact">
+            <i class="fa-solid fa-phone"></i>
+            +994 77 501 72 02
+          </a>
+
+          <a href="index.html#contact">
+            <i class="fa-regular fa-envelope"></i>
+            hemiyaso50@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Uni works. Bütün hüquqlar qorunur.</p>
+
+        <div>
+          <a href="index.html">Ana səhifə</a>
+          <a href="index.html#contact">Əlaqə</a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="index.html#contact"
+      class="floating-whatsapp"
+      aria-label="WhatsApp ilə sifariş ver"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+
+      <span>
+        <small>Sualınız var?</small>
+        WhatsApp
+      </span>
+    </a>
+
+    <button class="back-to-top" id="backToTop" aria-label="Yuxarı qayıt">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
