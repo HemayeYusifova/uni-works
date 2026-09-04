@@ -1,0 +1,118 @@
+/* ================================
+   UNI WORKS BRAND / HEADER LOGO
+================================ */
+
+.header .logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  overflow: visible !important;
+  text-decoration: none !important;
+}
+
+/* şəkli məcburi kiçildir */
+.header .logo img,
+.header .site-logo {
+  display: block !important;
+
+  width: 48px !important;
+  height: 48px !important;
+
+  max-width: 48px !important;
+  max-height: 48px !important;
+
+  min-width: 48px !important;
+
+  object-fit: contain !important;
+
+  position: static !important;
+  inset: auto !important;
+
+  transform: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  flex: 0 0 48px !important;
+}
+
+/* köhnə böyük logo/background effektlərini söndürür */
+.header .logo::before,
+.header .logo::after,
+.header .site-logo::before,
+.header .site-logo::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* yazı hissəsi */
+.header .brand-text {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+
+  gap: 3px !important;
+
+  width: auto !important;
+
+  position: static !important;
+  transform: none !important;
+}
+
+.header .brand-text strong {
+  margin: 0 !important;
+
+  font-family: "Manrope", sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+
+  font-weight: 800 !important;
+  letter-spacing: -0.4px !important;
+
+  color: #0b2347 !important;
+}
+
+.header .brand-text span {
+  margin: 0 !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 9px !important;
+  line-height: 1.2 !important;
+
+  font-weight: 600 !important;
+
+  color: #64748b !important;
+}
+
+/* header ölçüsünü qoruyur */
+.header .nav-container {
+  min-height: 72px !important;
+}
+
+/* mobil */
+@media (max-width: 600px) {
+  .header .logo img,
+  .header .site-logo {
+    width: 42px !important;
+    height: 42px !important;
+
+    max-width: 42px !important;
+    max-height: 42px !important;
+
+    min-width: 42px !important;
+
+    flex-basis: 42px !important;
+  }
+
+  .header .brand-text strong {
+    font-size: 16px !important;
+  }
+
+  .header .brand-text span {
+    font-size: 7.5px !important;
+  }
+}
